@@ -21,6 +21,9 @@ PreviewDialog::PreviewDialog(const FlashcardSet& setToPreview, QWidget *parent) 
         ui->previewTable->setItem(idx, 1, valItem);
         idx++;
     }
+
+    ui->previewTable->setHorizontalHeaderLabels({"Term", "Definition"});
+    ui->previewTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 }
 
 PreviewDialog::~PreviewDialog()
