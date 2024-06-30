@@ -28,29 +28,23 @@ find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
 set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
-        flashcardset.cpp
-        flashcardset.h
-        flashcardsdata.cpp
-        flashcardsdata.h
-        reviseview.cpp
-        reviseview.h
-        reviseview.ui
-        setview.cpp
-        setview.h
-        setview.ui
-        welcomeview.cpp
-        welcomeview.h
-        welcomeview.ui
-        importsetdialog.cpp
-        importsetdialog.h
-        importsetdialog.ui
-        previewdialog.cpp
-        previewdialog.h
-        previewdialog.ui
+        src/main.cpp
+        src/mainwindow.cpp
+        src/mainwindow.ui
+        src/flashcardset.cpp
+        src/flashcardsdata.cpp
+        src/reviseview.cpp
+        src/reviseview.ui
+        src/setview.cpp
+        src/setview.ui
+        src/welcomeview.cpp
+        src/welcomeview.ui
+        src/importsetdialog.cpp
+        src/importsetdialog.ui
+        src/previewdialog.cpp
+        src/previewdialog.ui
+        src/createsetdialog.cpp
+        src/createsetdialog.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

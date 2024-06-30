@@ -12,15 +12,15 @@ FlashcardSet::FlashcardSet(QString name, QMap<QString, QString> terms) : name(na
 }
 
 FlashcardSet::FlashcardSet(QJsonObject json)  {
-    name = json["Name"].toString();
+    name = json["Name"].toString().simplified();
     for (auto jsonTerms : json["Terms"].toArray()) {
         QJsonObject c_obj = jsonTerms.toObject();
-        terms[c_obj["Key"].toString()] = c_obj["Value"].toString();
+        terms[c_obj["Key"].toString()] = c_obj["Value"].toString().simplified();
     }
 }
 
 
-QString FlashcardSet::getName() {
+QString FlashcardSet::getName() const {
     return name;
 }
 
@@ -52,6 +52,30 @@ const QMap<QString, QString> &FlashcardSet::getTerms() const
 void FlashcardSet::setTerms(const QMap<QString, QString> &newTerms)
 {
     terms = newTerms;
+}
+
+QString &FlashcardSet::operator[](const QString &key)
+{
+    return terms[key];
+}
+
+void FlashcardSet::updateKey(const QString &oldKey, const QString &newKey)
+{
+    QString defn = terms[oldKey];
+    terms.remove(oldKey);
+    terms.insert(newKey, defn);
+}
+
+void FlashcardSet::updateVal(const QString &key, const QString &newVal)
+{
+    qDebug() << "Changing " << key << " to " << newVal;
+    terms[key] = newVal;
+    qDebug() << "Now " << terms[key];
+}
+
+FlashcardSet::operator bool() const
+{
+    return terms.size() > 0; // If size > 0, then the set is initialized.
 }
 
 QMapIterator<QString, QString> FlashcardSet::getTermIterator()

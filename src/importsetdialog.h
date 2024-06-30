@@ -17,7 +17,7 @@ class ImportSetDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit ImportSetDialog(QWidget *parent = nullptr);
+    explicit ImportSetDialog(QWidget *parent = nullptr, bool importFromFile = true);
     ~ImportSetDialog();
 
 private slots:
@@ -27,13 +27,14 @@ private slots:
 
     void on_importButton_clicked();
 
+
 private:
     Ui::ImportSetDialog *ui;
     QString mFileName;
     QMap<QString, QString> mTerms;
     FlashcardSet mTempSet;
 
-    bool LoadSet();
+    FlashcardSet LoadSet();
 
     void LoadSetError();
 };

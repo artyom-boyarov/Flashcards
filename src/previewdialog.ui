@@ -16,13 +16,18 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
      <property name="text">
       <string>Preview terms</string>
      </property>
     </widget>
    </item>
    <item>
-    <layout class="QVBoxLayout" name="mainLayout"/>
+    <widget class="QTableWidget" name="previewTable"/>
    </item>
   </layout>
  </widget>

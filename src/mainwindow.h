@@ -6,7 +6,7 @@
 #include <QMap>
 #include "flashcardset.h"
 #include <QVBoxLayout>
-#include <setview.h>
+#include "setview.h"
 #include <QStackedLayout>
 #include <QStackedWidget>
 #include <QGroupBox>
@@ -27,9 +27,9 @@ public:
     ~MainWindow();
 
 public slots:
-    void OnSetButtonClicked(FlashcardSet set);
+    void OnSetButtonClicked(const QString& setName);
     void OnGoBackRequest();
-    void OnReviseSet(FlashcardSet& set);
+    void OnReviseSet(const QString& setName);
     void OnGoBackToSet();
 
 signals:
@@ -39,7 +39,7 @@ private:
 
     QList<FlashcardSet> sets;
 
-    QString setPath = "/home/artyom/Documents/src/C++/Flashcards/sets.json";
+    QString setPath = "C:\\Users\\artyo\\Documents\\src\\C++\\Flashcards\\sets\\sets.json";
     WelcomeView* welcomeView;
     SetView* setView;
     ReviseView* reviseView;

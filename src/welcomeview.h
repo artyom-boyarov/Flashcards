@@ -22,19 +22,20 @@ public:
     void Refresh();
 
 signals:
-    void GotoSet(FlashcardSet set);
+    // Causes the view to switch to show the selected set
+    void GotoSet(const QString& setName);
 private slots:
-    void on_importButton_clicked();
+    void on_importCreateDialog_close();
 
-    void on_createButton_clicked();
+    void on_createSetButton_clicked();
 
-    void on_importDialog_close();
+    void on_importSetButton_clicked();
 
 private:
     Ui::WelcomeView *ui;
 
     void     setupLayout();
-    QList<QPushButton*> setButtons;
+    QList<QPushButton*> setButtons{};
 
     QVBoxLayout* scrollLayout;
     QGroupBox* mainBox;

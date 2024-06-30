@@ -1,7 +1,10 @@
 #ifndef SETVIEW_H
 #define SETVIEW_H
 
+#include <memory>
+
 #include <QWidget>
+
 #include "flashcardset.h"
 #include "flashcardsdata.h"
 
@@ -17,13 +20,13 @@ public:
     explicit SetView(QWidget *parent = nullptr);
     ~SetView();
 
-    const FlashcardSet &set() const;
-    void setSet(const FlashcardSet &newSet);
+    const QString setName() const;
+    void setSet(const QString& newSetName);
 
 signals:
     void RequestGoBack();
-    void ReviseSet(FlashcardSet& set);
-    void LearnSet(FlashcardSet& set);
+    void ReviseSet(const QString& setName);
+    //void LearnSet(FlashcardSet& set);
 
 public slots:
     void on_homeButton_clicked();
@@ -37,11 +40,18 @@ public slots:
 private slots:
     void on_deleteButton_clicked();
 
+    void on_termsTable_cellChanged(int row, int column);
+
+    void on_termsTable_cellActivated(int row, int column);
+
+    void on_termsTable_cellDoubleClicked(int row, int column);
+
 private:
     Ui::SetView *ui;
-    FlashcardSet mSet;
+    QString mSetName; // Name of the set to show.
 
     QList<QWidget*> setLabels;
+    QString editedTerm = "", editedDefn = "";
 };
 
 #endif // SETVIEW_H

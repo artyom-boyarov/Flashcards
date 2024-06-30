@@ -10,15 +10,6 @@
             ]
         },
         {
-            "Name": "test set 3",
-            "Terms": [
-                {
-                    "Key": "hallo",
-                    "Value": "hello"
-                }
-            ]
-        },
-        {
             "Name": "Verben mit praepositionen",
             "Terms": [
                 {
@@ -836,124 +827,124 @@
             ]
         },
         {
-            "Name": "Set 2",
+            "Name": "Verben 2",
             "Terms": [
                 {
                     "Key": "ausschliessen ",
-                    "Value": " separate, outcast"
+                    "Value": "separate, outcast"
                 },
                 {
                     "Key": "bisher ",
-                    "Value": " for now"
+                    "Value": "for now"
                 },
                 {
                     "Key": "darauf achten ",
-                    "Value": " be careful"
+                    "Value": "be careful"
                 },
                 {
                     "Key": "das Gewicht ",
-                    "Value": " weight"
+                    "Value": "weight"
                 },
                 {
                     "Key": "das Lob ",
-                    "Value": " praise"
+                    "Value": "praise"
                 },
                 {
                     "Key": "der Becher ",
-                    "Value": " cup"
+                    "Value": "cup"
                 },
                 {
                     "Key": "der Bettler ",
-                    "Value": " beggar"
+                    "Value": "beggar"
                 },
                 {
                     "Key": "der Draht ",
-                    "Value": " wire"
+                    "Value": "wire"
                 },
                 {
                     "Key": "der Eigentümer ",
-                    "Value": " owner"
+                    "Value": "owner"
                 },
                 {
                     "Key": "der Lotsen ",
-                    "Value": " pilot"
+                    "Value": "pilot"
                 },
                 {
                     "Key": "der Rand ",
-                    "Value": " edge"
+                    "Value": "edge"
                 },
                 {
                     "Key": "der Schaden ",
-                    "Value": " danger"
+                    "Value": "danger"
                 },
                 {
                     "Key": "die Einnahme ",
-                    "Value": " revenue"
+                    "Value": "revenue"
                 },
                 {
                     "Key": "die Ermittlung ",
-                    "Value": " ascertainment"
+                    "Value": "ascertainment"
                 },
                 {
                     "Key": "die Gepflogenheit ",
-                    "Value": " ancient traditions"
+                    "Value": "ancient traditions"
                 },
                 {
                     "Key": "die Ladung ",
-                    "Value": " freight"
+                    "Value": "freight"
                 },
                 {
                     "Key": "die Ursache ",
-                    "Value": " reason"
+                    "Value": "reason"
                 },
                 {
                     "Key": "die Vermutung ",
-                    "Value": " guess"
+                    "Value": "guess"
                 },
                 {
                     "Key": "entwickeln ",
-                    "Value": " to develop"
+                    "Value": "to develop"
                 },
                 {
                     "Key": "erheblich ",
-                    "Value": " serious"
+                    "Value": "serious"
                 },
                 {
                     "Key": "etw. acc entdecken ",
-                    "Value": " to discover"
+                    "Value": "to discover"
                 },
                 {
                     "Key": "kündigen ",
-                    "Value": " to cancel,fire"
+                    "Value": "to cancel,fire"
                 },
                 {
                     "Key": "sich +acc els etw +nom erwiesen ",
-                    "Value": " to prove to be something"
+                    "Value": "to prove to be something"
                 },
                 {
                     "Key": "sich auf etw. verzichten ",
-                    "Value": " decline somethign"
+                    "Value": "decline somethign"
                 },
                 {
                     "Key": "stur ",
-                    "Value": " stubborn"
+                    "Value": "stubborn"
                 },
                 {
                     "Key": "verbreiteten ",
-                    "Value": " widespread"
+                    "Value": "widespread"
                 },
                 {
                     "Key": "wohlauf ",
-                    "Value": " well"
+                    "Value": "well"
                 }
             ]
         },
         {
-            "Name": "01",
+            "Name": "Verben 3",
             "Terms": [
                 {
                     "Key": "an etw. herantreten",
-                    "Value": " to approach smth."
+                    "Value": "to approach smth."
                 },
                 {
                     "Key": "andauern ",
@@ -961,11 +952,11 @@
                 },
                 {
                     "Key": "ausbreiten ",
-                    "Value": " to spread"
+                    "Value": "to spread"
                 },
                 {
                     "Key": "auseinander ",
-                    "Value": " apart"
+                    "Value": "apart"
                 },
                 {
                     "Key": "blödsinning ",
@@ -981,7 +972,7 @@
                 },
                 {
                     "Key": "das Gold ",
-                    "Value": " gold"
+                    "Value": "gold"
                 },
                 {
                     "Key": "das Jucken ",
@@ -989,11 +980,11 @@
                 },
                 {
                     "Key": "das Pult",
-                    "Value": " desk"
+                    "Value": "desk"
                 },
                 {
                     "Key": "das Ungeziefer ",
-                    "Value": " bug"
+                    "Value": "bug"
                 },
                 {
                     "Key": "der ",
@@ -1001,7 +992,7 @@
                 },
                 {
                     "Key": "der Beschauer",
-                    "Value": " Viewer"
+                    "Value": "Viewer"
                 },
                 {
                     "Key": "der Kälteschauer ",
@@ -1013,7 +1004,7 @@
                 },
                 {
                     "Key": "der Rahmen ",
-                    "Value": " frame"
+                    "Value": "frame"
                 },
                 {
                     "Key": "der Teufel ",
@@ -1021,19 +1012,19 @@
                 },
                 {
                     "Key": "der Umfang ",
-                    "Value": " extent, circumference"
+                    "Value": "extent, circumference"
                 },
                 {
                     "Key": "die Bettdecke ",
-                    "Value": " bed duvet"
+                    "Value": "bed duvet"
                 },
                 {
                     "Key": "die Lage",
-                    "Value": " layer,position,status"
+                    "Value": "layer,position,status"
                 },
                 {
                     "Key": "die Musterkollektion",
-                    "Value": " sample collection"
+                    "Value": "sample collection"
                 },
                 {
                     "Key": "die Narrheit ",
@@ -1041,15 +1032,15 @@
                 },
                 {
                     "Key": "die Schwerhörigkeit",
-                    "Value": " hardness of hearing"
+                    "Value": "hardness of hearing"
                 },
                 {
                     "Key": "die Trübe",
-                    "Value": " slime"
+                    "Value": "slime"
                 },
                 {
                     "Key": "die Tuchwaren",
-                    "Value": " draperies"
+                    "Value": "draperies"
                 },
                 {
                     "Key": "die Versteifung ",
@@ -1057,7 +1048,7 @@
                 },
                 {
                     "Key": "die Verwandlung ",
-                    "Value": " transformation"
+                    "Value": "transformation"
                 },
                 {
                     "Key": "dumpf ",
@@ -1069,7 +1060,7 @@
                 },
                 {
                     "Key": "etw(acc) beurteilen",
-                    "Value": " to assess"
+                    "Value": "to assess"
                 },
                 {
                     "Key": "flimmerten ",
@@ -1077,7 +1068,7 @@
                 },
                 {
                     "Key": "gewölbt ",
-                    "Value": " arched"
+                    "Value": "arched"
                 },
                 {
                     "Key": "gleiten ",
@@ -1085,7 +1076,7 @@
                 },
                 {
                     "Key": "im Vergleich ",
-                    "Value": " in comparison"
+                    "Value": "in comparison"
                 },
                 {
                     "Key": "jucken ",
@@ -1101,11 +1092,11 @@
                 },
                 {
                     "Key": "schaukelten",
-                    "Value": " to sway"
+                    "Value": "to sway"
                 },
                 {
                     "Key": "sich Verwandeln ",
-                    "Value": " to transform"
+                    "Value": "to transform"
                 },
                 {
                     "Key": "sich(acc) wölben ",
@@ -1117,19 +1108,19 @@
                 },
                 {
                     "Key": "undurchführbar",
-                    "Value": " unfeasible"
+                    "Value": "unfeasible"
                 },
                 {
                     "Key": "ungeheur ",
-                    "Value": " enormous"
+                    "Value": "enormous"
                 },
                 {
                     "Key": "vergoldet ",
-                    "Value": " golden"
+                    "Value": "golden"
                 },
                 {
                     "Key": "wohlbekannten ",
-                    "Value": " well known"
+                    "Value": "well known"
                 },
                 {
                     "Key": "zappeln ",
@@ -1146,7 +1137,7 @@
             ]
         },
         {
-            "Name": "13",
+            "Name": "Verben 4",
             "Terms": [
                 {
                     "Key": "aufnahmen",
@@ -1251,6 +1242,40 @@
                 {
                     "Key": "zuungunsten",
                     "Value": "for the disadvantage"
+                }
+            ]
+        },
+        {
+            "Name": "o",
+            "Terms": [
+                {
+                    "Key": "do a",
+                    "Value": "task"
+                },
+                {
+                    "Key": "hello",
+                    "Value": "world"
+                },
+                {
+                    "Key": "i say",
+                    "Value": "no to this"
+                },
+                {
+                    "Key": "no",
+                    "Value": "yes"
+                }
+            ]
+        },
+        {
+            "Name": "Technologie",
+            "Terms": [
+                {
+                    "Key": "Laptop",
+                    "Value": "laptop"
+                },
+                {
+                    "Key": "Robotik",
+                    "Value": "robotics"
                 }
             ]
         }

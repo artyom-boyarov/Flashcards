@@ -8,6 +8,7 @@
 #include <QQueue>
 #include <QPair>
 #include "flashcardset.h"
+#include "flashcardsdata.h"
 
 namespace Ui {
 class ReviseView;
@@ -27,8 +28,8 @@ public:
     explicit ReviseView(QWidget *parent = nullptr);
     ~ReviseView();
 
-    const FlashcardSet &set() const;
-    void setSet(const FlashcardSet &newSet);
+    const QString& setName() const;
+    void setSet(const QString& newSetName);
 
     void Begin();
 
@@ -54,8 +55,7 @@ signals:
 private:
     Ui::ReviseView *ui;
 
-    FlashcardSet mSet;
-    QMapIterator<QString, QString> mSetIterator;
+    QString mSetName;
 
     State state;
 

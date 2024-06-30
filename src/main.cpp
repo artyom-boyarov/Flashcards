@@ -1,6 +1,7 @@
 #include "mainwindow.h"
-
+#include "flashcardsdata.h"
 #include <QApplication>
+#include <QString>
 
 int main(int argc, char *argv[])
 {

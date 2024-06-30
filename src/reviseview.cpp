@@ -1,10 +1,11 @@
 #include "reviseview.h"
 #include "ui_reviseview.h"
+#include <QMessageBox>
 
 ReviseView::ReviseView(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ReviseView),
-    mSetIterator(mSet.getTermIterator())
+    mSetName{}
 {
     ui->setupUi(this);
 }
@@ -14,21 +15,22 @@ ReviseView::~ReviseView()
     delete ui;
 }
 
-const FlashcardSet &ReviseView::set() const
+const QString& ReviseView::setName() const
 {
-    return mSet;
+    return mSetName;
 }
 
-void ReviseView::setSet(const FlashcardSet &newSet)
+void ReviseView::setSet(const QString& newSetName)
 {
-    mSet = newSet;
-
-    QMapIterator<QString, QString> termsIterator = mSet.getTermIterator();
+    mSetName = newSetName;
+    auto set = FlashCardsData::getFlashcardSet(mSetName);
+    QMapIterator<QString, QString> termsIterator = set.getTermIterator();
     mTermsQueue.clear();
     while (termsIterator.hasNext()) {
         termsIterator.next();
         mTermsQueue.append( qMakePair(termsIterator.key(), termsIterator.value()));
     }
+    Begin();
 }
 
 void ReviseView::Begin()
@@ -44,22 +46,11 @@ void ReviseView::Begin()
     }
     mCurrentTerm = mTermsQueue.dequeue();
     ui->keyLabel->setText(mCurrentTerm.first);
-    /*
-    mSetIterator.next();
-    ui->keyLabel->setText(mSetIterator.key());
-    */
 }
 
 void ReviseView::StartLearning(FlashcardSet &set)
 {
     qDebug() << "Learning " << set.getName();
-    /*
-    setSet(set);
-    mSetIterator = mSet.getTermIterator();
-
-    ui->progressBar->setRange(0, mSet.getTerms().size());
-    ui->progressBar->setValue(0);
-    */
 }
 
 void ReviseView::on_homeButton_clicked()
@@ -113,6 +104,7 @@ void ReviseView::SetNextTerm()
         ui->textInput->setPlaceholderText("");
         ui->keyLabel->setText(mCurrentTerm.first);
     } else {
+        QMessageBox::information(this, "Finished revising", tr("You've completed revising set %1! Well done!").arg(mSetName));
         emit ReturnToSet();
     }
 

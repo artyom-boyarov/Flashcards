@@ -7,17 +7,22 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>432</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>Import set</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="dialogLabel">
      <property name="text">
-      <string>Import/Create set</string>
+      <string>Import set</string>
      </property>
     </widget>
    </item>
@@ -45,7 +50,7 @@
    <item>
     <widget class="QTextEdit" name="setInput">
      <property name="placeholderText">
-      <string>Enter terms</string>
+      <string>Imported terms will appear here.</string>
      </property>
     </widget>
    </item>
@@ -71,6 +76,9 @@
     <widget class="QRadioButton" name="termFirstButton">
      <property name="text">
       <string>Term first</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
      </property>
     </widget>
    </item>

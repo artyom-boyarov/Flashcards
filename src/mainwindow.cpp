@@ -10,7 +10,7 @@
 #include <QPushButton>
 #include <QLabel>
 #include <QDebug>
-#include <flashcardsdata.h>
+#include "flashcardsdata.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
@@ -45,26 +45,23 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::OnSetButtonClicked(FlashcardSet set)
+void MainWindow::OnSetButtonClicked(const QString& setName)
 {
-    qDebug() << "Selected " << set.getName();
+    qDebug() << "Selected " << setName;
 
-    setView->setSet(set);
+    setView->setSet(setName);
     emit GotoWidget(setView);
-    //ui->mainStack->setCurrentIndex(mainStack->indexOf(setView));
 }
 
 void MainWindow::OnGoBackRequest()
 {
-    //welcomeView->Refresh(); // Buggy
     emit GotoWidget(welcomeView);
 }
 
-void MainWindow::OnReviseSet(FlashcardSet &set)
+void MainWindow::OnReviseSet(const QString& setName)
 {
-    qDebug() << "Revising " << set.getName();
-    reviseView->setSet(set);
-    reviseView->Begin();
+    qDebug() << "Revising " << setName;
+    reviseView->setSet(setName);
     emit GotoWidget(reviseView);
 
 }
